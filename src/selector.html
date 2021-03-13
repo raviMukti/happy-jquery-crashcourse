@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <!-- Learn About ID, Class, Tag, and Type Selector -->
+    <head>
+        <title>Jquery Refreshment</title>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <style>
+            body
+            {
+                font-size: 17px;
+                font-family: arial;
+                background: #f4f4f4;
+                line-height: 1.5em;
+            }
+            header
+            {
+                background: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                border-bottom: 4px #000 solid;
+                margin-bottom: 10px;
+            }
+            #container
+            {
+                width: 90%;
+                margin: auto;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Jquery Refreshment for Me</header>
+        <div id="container">
+            <h1 id="heading1">Heading One</h1>
+            <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis incidunt ex laboriosam vel magnam laborum tempora quis ipsum corrupti iure quisquam blanditiis, nostrum soluta repellendus suscipit modi minus sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia rerum repudiandae similique est accusantium sit voluptates quibusdam pariatur totam.</p>
+
+            <h1 id="heading2">Heading Two</h1>
+            <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae officiis incidunt ex laboriosam vel magnam laborum tempora quis ipsum corrupti <span>quisquam</span> blanditiis, nostrum soluta repellendus suscipit modi minus sint. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia rerum repudiandae similique est accusantium sit voluptates quibusdam pariatur totam.</p>
+        </div>
+
+        <ul id="list">
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+        </ul>
+
+        <!-- Jquery And Javascript -->
+        <script>
+            $(document).ready(function(){
+                // $('#para1').hide();
+                $('p span').css('color', 'red');
+                $('ul#list li:even').css('color', 'red');
+                $('ul#list li:odd').css('background-color', 'green');
+            });
+        </script>
+    </body>
+</html>
